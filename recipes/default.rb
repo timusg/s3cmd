@@ -8,8 +8,6 @@
 #
 
 
-#TODO encrypt data bags
-
 remote_file "/etc/yum.repos.d/s3tools.repo" do
   source "http://s3tools.org/repo/RHEL_6/s3tools.repo"
   :create_if_missing

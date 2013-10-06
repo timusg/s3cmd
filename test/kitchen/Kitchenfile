@@ -1,0 +1,3 @@
+cookbook "s3cmd" do
+
+end
