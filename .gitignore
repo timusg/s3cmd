@@ -3,4 +3,5 @@
 .kitchen
 bin
 .kitchen/
+.vagrant/
 .kitchen.local.yml
