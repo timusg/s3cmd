@@ -1,13 +1,26 @@
 # s3cmd cookbook
+============
+Installs and configures s3cmd.
 
-# Requirements
+### About Testing
+This cookbook utilizes [Foodcritic](http://acrmp.github.io/foodcritic/), [Test-Kitchen](https://github.com/opscode/test-kitchen), [Vagrant](http://www.vagrantup.com),[bats](https://github.com/sstephenson/bats), [Rubocop](https://github.com/bbatsov/rubocop), and [Travis-CI](https://travis-ci.org) to provide automated test coverage.
 
-# Usage
+Requirements
+------------
+### Supported Operating Systems
+- RedHat-family Linux Distributions
 
-# Attributes
+### Cookbooks
 
-# Recipes
+Attributes
+----------
+### Recommended tunables
 
-# Author
 
-Author:: sumit (timusga@gmail.com)
+Usage
+-----
+### default recipe
+
+License & Authors
+-----------------
+- Author:: sumit gupta (<timusga@gmail.com>)
