@@ -1,5 +1,7 @@
 # s3cmd cookbook
 ============
+[![Build Status](https://api.travis-ci.org/timusg/s3cmd.png?branch=master)](http://travis-ci.org/timusg/s3cmd)
+
 Installs and configures s3cmd.
 
 ### About Testing
