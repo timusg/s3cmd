@@ -24,7 +24,6 @@ if node.s3cmd['data_bag']
   secret_key = aws_creds['secret_key']
 end
 
-
 template '/root/.s3cfg' do
   source 's3cfg.erb'
   owner 'root'
