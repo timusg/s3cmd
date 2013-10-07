@@ -4,5 +4,5 @@ rvm:
 before_script:
   - bundle exec berks install
 script:
-  - bundle exec rubocop metadata.rb recipes
+  - bundle exec rubocop metadata.rb recipes attributes
   - bundle exec foodcritic -f any .

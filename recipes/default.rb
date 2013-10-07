@@ -15,10 +15,10 @@ package 's3cmd' do
   not_if 'rpm -qa | grep s3cmd'
 end
 
-access_key = node.s3cmd['access_key']
-secret_key = node.s3cmd['secret_key']
+access_key = node.s3cmd.access_key
+secret_key = node.s3cmd.secret_key
 
-if node.s3cmd['data_bag']
+if node.s3cmd.data_bag
   aws_creds = data_bag_item(:aws, 'credentials')
   access_key = aws_creds['access_key']
   secret_key = aws_creds['secret_key']
