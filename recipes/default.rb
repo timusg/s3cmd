@@ -15,15 +15,24 @@ package 's3cmd' do
   not_if 'rpm -qa | grep s3cmd'
 end
 
-aws_creds = data_bag_item(:aws, 'credentials')
+access_key = node.s3cmd['access_key']
+secret_key = node.s3cmd['secret_key']
+
+if node.s3cmd['data_bag']
+  aws_creds = data_bag_item(:aws, 'credentials')
+  access_key = aws_creds['access_key']
+  secret_key = aws_creds['secret_key']
+end
+
+
 template '/root/.s3cfg' do
   source 's3cfg.erb'
   owner 'root'
   group 'root'
   mode '400'
   variables(
-    access_key: aws_creds['access_key'],
-    secret_key: aws_creds['secret_key']
+    access_key: access_key,
+    secret_key: secret_key
   )
   :create
 end

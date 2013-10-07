@@ -11,4 +11,7 @@ platforms:
 suites:
 - name: default
   run_list: ["recipe[s3cmd]"]
-  attributes: {}
+  attributes:
+    s3cmd:
+      access_key: attr_access
+      secret_key: attr_secret
